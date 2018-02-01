@@ -1,0 +1,21 @@
+import sys
+import numpy as np
+import matplotlib.pyplot as plt
+def compare_it(i):
+    if(int(i)<7):
+        print 'less than'
+     else:
+        print 'greater than'
+if(__name__=="__main__"):
+    a={'shape':0,'module':[1,2]}
+    a=np.arange(-5,5)
+    b=2*a
+    plt.figure()
+    plt.plot(a,b)
+    plt.xlabel('An x label')
+    plt.xlabel('A y label')
+    plt.title('A title')
+    plt.show()
+    compare_it(sys.argv[1])
+    exit(0)
+    
